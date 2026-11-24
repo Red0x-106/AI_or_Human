@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Escape</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <div class="top-bar">
+
+            <div>
+                <h1>AI Escape</h1>
+                <p id="objective">
+                    Escape the facility.
+                </p>
+            </div>
+
+            <div class="info">
+                <span id="lives">Lives: 3</span>
+                <span id="keys">Keys: 0</span>
+            </div>
+
+        </div>
+
+
+        <div id="game-area">
+
+            <div class="room room-one"></div>
+            <div class="room room-two"></div>
+            <div class="room room-three"></div>
+
+            <div class="wall wall-one"></div>
+            <div class="wall wall-two"></div>
+            <div class="wall wall-three"></div>
+
+            <div class="switch" id="switch1">
+                <div class="switch-button"></div>
+                <span>Switch</span>
+            </div>
+
+            <div class="switch" id="switch2">
+                <div class="switch-button"></div>
+                <span>Switch</span>
+            </div>
+
+            <div class="key" id="key">
+                <div class="key-shape"></div>
+                <span>Key</span>
+            </div>
+
+            <div class="door locked" id="door1">
+                <div class="door-body"></div>
+                <span>Door</span>
+            </div>
+
+            <div class="door locked" id="door2">
+                <div class="door-body"></div>
+                <span>Door</span>
+            </div>
+
+            <div id="exit">
+                <div class="exit-door"></div>
+                <span>EXIT</span>
+            </div>
+
+            <div id="player"></div>
+
+        </div>
+
+
+        <div id="message">
+            Use WASD or the arrow keys to move.
+        </div>
+
+    </div>
+
+
+    <div id="game-result" class="hidden">
+
+        <div class="result-box">
+
+            <h2 id="result-title">
+                You Escaped
+            </h2>
+
+            <p id="result-text"></p>
+
+            <button id="restart-button">
+                Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
