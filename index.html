@@ -3,35 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AI or Human</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <main class="game">
-        <h1>AI or Human</h1>
-        <p class="subtitle">Can you tell who made it?</p>
+    <main class="main">
 
-        <div class="game-info">
-            <p>Score: <span id="score">0</span></p>
-            <p>Round: <span id="round">1</span></p>
-        </div>
+        <header class="header">
 
-        <div class="image-box">
-            <div class="image-choice" id="choice-1">
-                <img id="image-1" src="../images/A.png" alt="First choice">
+            <h1>AI or Human</h1>
+
+            <p>Choose a game and test yourself.</p>
+
+        </header>
+
+        <section class="games">
+
+            <div class="game-card">
+
+                <div class="game-number">01</div>
+
+                <h2>AI or Human</h2>
+
+                <p>
+                    Look at the images and decide whether they were made by AI or a human.
+                </p>
+
+                <button class="play-button" data-game="image.html">
+                    Play
+                </button>
+
             </div>
 
-            <div class="image-choice" id="choice-2">
-                <img id="image-2" src="../images/A2.jpg" alt="Second choice">
+            <div class="game-card">
+
+                <div class="game-number">02</div>
+
+                <h2>Find the AI</h2>
+
+                <p>
+                    Explore the facility, find the characters and figure out which ones are AI.
+                </p>
+
+                <button class="play-button" data-game="npc.html">
+                    Play
+                </button>
+
             </div>
-        </div>
 
-        <p id="result"></p>
+            <div class="game-card">
 
-        <button id="next-btn">Next</button>
+                <div class="game-number">03</div>
+
+                <h2>AI Escape</h2>
+
+                <p>
+                    Run through the facility and reach the escape gate before the AI catches you.
+                </p>
+
+                <button class="play-button" data-game="escape.html">
+                    Play
+                </button>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>Choose your game.</p>
+        </footer>
+
     </main>
 
     <script src="script.js"></script>
+
 </body>
 </html>
