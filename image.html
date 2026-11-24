@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI or Human</title>
+
+    <link rel="stylesheet" href="image.css">
+</head>
+
+<body>
+
+    <main class="game">
+
+        <h1>AI or Human</h1>
+
+        <p class="subtitle">
+            Can you tell who made it?
+        </p>
+
+        <div class="game-info">
+
+            <p>
+                Score: <span id="score">0</span>
+            </p>
+
+            <p>
+                Round: <span id="round">1</span>
+            </p>
+
+        </div>
+
+
+        <div class="image-box">
+
+            <div class="image-choice" id="choice-1">
+
+                <img
+                    id="image-1"
+                    src="images/A.png"
+                    alt="First choice">
+
+            </div>
+
+
+            <div class="image-choice" id="choice-2">
+
+                <img
+                    id="image-2"
+                    src="images/A2.jpg"
+                    alt="Second choice">
+
+            </div>
+
+        </div>
+
+
+        <p id="result"></p>
+
+        <button id="next-btn">
+            Next
+        </button>
+
+    </main>
+
+
+    <script src="image.js"></script>
+
+</body>
+</html>

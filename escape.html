@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Escape</title>
+
+    <link rel="stylesheet" href="escape.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <div class="top-bar">
+
+            <div>
+                <h1>AI Escape</h1>
+                <p id="objective">
+                    Reach the escape gate before the AI catches you.
+                </p>
+            </div>
+
+            <div class="info">
+                <span id="distance">Distance: 0</span>
+                <span id="status">RUN!</span>
+            </div>
+
+        </div>
+
+
+        <div id="game-area">
+
+            <div class="wall wall-one"></div>
+            <div class="wall wall-two"></div>
+            <div class="wall wall-three"></div>
+            <div class="wall wall-four"></div>
+            <div class="wall wall-five"></div>
+            <div class="wall wall-six"></div>
+            <div class="wall wall-seven"></div>
+
+            <div class="room room-one"></div>
+            <div class="room room-two"></div>
+            <div class="room room-three"></div>
+
+            <div id="escape-gate">
+                <div class="gate-door"></div>
+                <span>ESCAPE</span>
+            </div>
+
+            <div id="player">
+                <span>You</span>
+            </div>
+
+            <div id="ai">
+                <span>AI</span>
+            </div>
+
+        </div>
+
+
+        <div id="message">
+            Use WASD or the arrow keys to run. Hold SHIFT to sprint.
+        </div>
+
+    </div>
+
+
+    <div id="game-result" class="hidden">
+
+        <div class="result-box">
+
+            <h2 id="result-title">
+                You Escaped
+            </h2>
+
+            <p id="result-text"></p>
+
+            <button id="restart-button">
+                Run Again
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="escape.js"></script>
+
+</body>
+</html>
