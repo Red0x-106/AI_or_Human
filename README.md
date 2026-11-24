@@ -17,6 +17,9 @@ the problem i had was making the ai rn behind teh player, i watched some yt vide
 from the github pages those who created the PAC-MAN game and also used
 ai to understand and build.
 
+the main prroblem was uploading this to the github pages, as this was in folder it wwasn't happening 
+i had to change the whole files name and again take it out from the folder again pasted it on the file then it worked(this was the most painful part tht i ever had creating a site)
+
 ## how to use
 
 to use it in the main interface just click on the game u wan to play and play.
