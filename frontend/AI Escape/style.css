@@ -7,7 +7,7 @@
 body {
     min-height: 100vh;
 
-    background: #151515;
+    background: #111;
     color: white;
 
     font-family: Arial, sans-serif;
@@ -47,13 +47,17 @@ body {
     font-size: 15px;
 }
 
+#status {
+    font-weight: bold;
+}
+
 #game-area {
     position: relative;
 
     width: 100%;
     height: 560px;
 
-    background: #202020;
+    background: #1d1d1d;
 
     border: 2px solid #444;
     border-radius: 10px;
@@ -64,242 +68,173 @@ body {
 .room {
     position: absolute;
 
-    background: #232323;
-
-    border: 1px solid #303030;
+    background: #222;
+    border: 1px solid #2f2f2f;
 }
 
 .room-one {
     left: 20px;
     top: 20px;
 
-    width: 260px;
-    height: 230px;
+    width: 230px;
+    height: 150px;
 }
 
 .room-two {
-    left: 320px;
-    top: 20px;
+    right: 25px;
+    top: 25px;
 
-    width: 270px;
-    height: 230px;
+    width: 250px;
+    height: 150px;
 }
 
 .room-three {
-    right: 20px;
+    left: 300px;
     bottom: 20px;
 
-    width: 310px;
-    height: 230px;
+    width: 300px;
+    height: 130px;
 }
 
 .wall {
     position: absolute;
 
-    background: #101010;
+    background: #0d0d0d;
+    border: 1px solid #444;
 
-    border: 1px solid #3d3d3d;
+    z-index: 2;
 }
 
 .wall-one {
-    left: 285px;
+    left: 250px;
     top: 0;
 
     width: 18px;
-    height: 250px;
+    height: 260px;
 }
 
 .wall-two {
-    left: 600px;
-    top: 0;
+    left: 400px;
+    top: 180px;
 
     width: 18px;
-    height: 330px;
+    height: 230px;
 }
 
 .wall-three {
-    left: 0;
-    bottom: 115px;
+    left: 550px;
+    top: 0;
 
-    width: 390px;
+    width: 18px;
+    height: 210px;
+}
+
+.wall-four {
+    left: 690px;
+    top: 200px;
+
+    width: 18px;
+    height: 260px;
+}
+
+.wall-five {
+    left: 100px;
+    top: 300px;
+
+    width: 190px;
     height: 18px;
 }
 
-#player {
+.wall-six {
+    left: 500px;
+    top: 450px;
+
+    width: 200px;
+    height: 18px;
+}
+
+.wall-seven {
+    left: 760px;
+    top: 80px;
+
+    width: 18px;
+    height: 150px;
+}
+
+#player,
+#ai {
     position: absolute;
 
     width: 28px;
     height: 28px;
 
-    background: white;
-
     border-radius: 50%;
 
     z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.switch {
-    position: absolute;
-
-    width: 65px;
-
-    text-align: center;
-
-    color: #aaa;
-
-    font-size: 11px;
-
-    z-index: 5;
+#player {
+    background: white;
+    color: #111;
 }
 
-.switch-button {
-    width: 30px;
-    height: 30px;
-
-    margin: 0 auto 5px;
-
-    background: #333;
-
-    border: 2px solid #666;
-    border-radius: 5px;
-}
-
-.switch.active .switch-button {
-    background: #666;
-
-    border-color: white;
-}
-
-#switch1 {
-    left: 90px;
-    top: 80px;
-}
-
-#switch2 {
-    left: 470px;
-    top: 100px;
-}
-
-.key {
-    position: absolute;
-
-    width: 55px;
-
-    text-align: center;
-
-    color: #aaa;
-
-    font-size: 11px;
-
-    z-index: 5;
-}
-
-.key-shape {
-    width: 25px;
-    height: 25px;
-
-    margin: 0 auto 5px;
-
+#ai {
     background: #777;
+    color: white;
 
-    border: 2px solid #aaa;
-
-    border-radius: 50%;
+    z-index: 9;
 }
 
-.key.collected {
-    display: none;
-}
-
-#key {
-    right: 100px;
-    top: 100px;
-}
-
-.door {
+#player span,
+#ai span {
     position: absolute;
 
-    width: 60px;
+    top: 31px;
 
-    text-align: center;
-
-    color: #777;
-
-    font-size: 11px;
-
-    z-index: 5;
+    font-size: 10px;
+    white-space: nowrap;
 }
 
-.door-body {
-    width: 45px;
-    height: 65px;
-
-    margin: 0 auto 5px;
-
-    background: #292929;
-
-    border: 2px solid #555;
-
-    border-radius: 4px;
-}
-
-.door.open .door-body {
-    background: #555;
-
-    border-color: white;
-}
-
-.door.open {
-    color: white;
-}
-
-#door1 {
-    left: 275px;
-    top: 330px;
-}
-
-#door2 {
-    left: 590px;
-    top: 330px;
-}
-
-#exit {
+#escape-gate {
     position: absolute;
 
     right: 25px;
     bottom: 25px;
 
-    width: 70px;
+    width: 80px;
 
     text-align: center;
 
-    color: #666;
+    color: #aaa;
 
     font-size: 11px;
 
     z-index: 5;
 }
 
-.exit-door {
-    width: 50px;
-    height: 65px;
+.gate-door {
+    width: 55px;
+    height: 70px;
 
     margin: 0 auto 5px;
 
     background: #292929;
 
-    border: 2px solid #555;
+    border: 2px solid #777;
 
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
-#exit.open {
+#escape-gate.open {
     color: white;
 }
 
-#exit.open .exit-door {
+#escape-gate.open .gate-door {
     background: #555;
-
     border-color: white;
 }
 
@@ -311,7 +246,6 @@ body {
     background: #202020;
 
     border: 1px solid #444;
-
     border-radius: 8px;
 
     text-align: center;
@@ -332,7 +266,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
 
     z-index: 30;
 }
@@ -346,7 +280,6 @@ body {
     background: #202020;
 
     border: 1px solid #555;
-
     border-radius: 10px;
 
     text-align: center;
@@ -372,7 +305,6 @@ button {
     color: white;
 
     border: 1px solid #555;
-
     border-radius: 6px;
 
     font-size: 15px;
